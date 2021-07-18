@@ -21,7 +21,6 @@ const { Sider } = Layout;
 
 const MenuSider = () => {
     const [collapsed,setCollapsed] = useState(false);
-    const a = 0;
     const onCollapse = collapsed => {
       setCollapsed( collapsed );
     };
