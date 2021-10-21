@@ -1,19 +1,18 @@
-import React from 'react'
-import {Breadcrumb,Layout} from 'antd'
+import React from 'react';
+import Maincontent from '../../common/Maincontent';
 import 'antd/dist/antd.css';
-import './index.css'
-const {Content} = Layout 
-const Products = () => {
-    return (
-        <Content style={{ margin: '0 16px' }}>
-            <Breadcrumb style={{ margin: '16px 0' }}>
-              <Breadcrumb.Item>Products</Breadcrumb.Item>
-            </Breadcrumb>
-            <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
-              All products
-            </div>
-          </Content>
-    )
+import './index.css';
+
+const renderContent = () =>{
+  return(
+    <h1>Products</h1>
+  )
 }
 
-export default Products 
+const Products = () => {
+    return (
+        <Maincontent title="Products" content="hello" />
+    );
+};
+
+export default Products;
